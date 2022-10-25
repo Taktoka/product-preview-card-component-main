@@ -16,7 +16,7 @@
 ### Links
 
 - Solution URL: [https://github.com/Taktoka/product-preview-card-component-main.git](https://github.com/Taktoka/product-preview-card-component-main.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://product-preview-card-component-main.vercel.app/](https://product-preview-card-component-main.vercel.app/)
 
 ## My process
 
