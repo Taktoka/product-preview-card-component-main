@@ -15,7 +15,7 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/Taktoka/product-preview-card-component-main.git](https://github.com/Taktoka/product-preview-card-component-main.git)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
