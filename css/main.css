@@ -1,0 +1,123 @@
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --very-dark-cyan: hsl(158deg 38% 16%);
+  --cream: hsl(30, 38%, 92%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Montserrat", "Fraunces";
+  background-color: var(--cream);
+}
+a {
+  text-decoration: none;
+}
+.main {
+  background-color: var(--white);
+  width: 600px;
+  margin: 100px auto;
+  display: flex;
+  border-radius: 8px;
+}
+
+.main img {
+  max-width: 50%;
+  border-radius: 8px 0 0 8px;
+}
+.main .mobile {
+  display: none;
+}
+.main .Preview {
+  padding: 25px;
+}
+.Preview .perfume {
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--dark-grayish-blue);
+}
+.Preview h1 {
+  font-family: "Fraunces";
+  margin: 20px 0;
+  font-size: 40px;
+  line-height: 0.9;
+  color: var(--very-dark-blue);
+}
+.Preview p {
+  line-height: 1.5;
+  color: var(--dark-grayish-blue);
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.Preview .price {
+  display: flex;
+  align-items: center;
+  font-family: "Fraunces";
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.5;
+  color: var(--dark-cyan);
+}
+.Preview span {
+  font-size: 15px;
+  color: var(--dark-grayish-blue);
+  margin-left: 20px;
+  font-weight: normal;
+  font-family: sans-serif;
+  position: relative;
+}
+.Preview span::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  background-color: var(--dark-grayish-blue);
+  transform: translate(-50%);
+}
+.Preview .btn {
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  transition: background-color 0.3s;
+}
+.Preview .btn:hover {
+  background-color: var(--very-dark-cyan);
+}
+.Preview .btn img {
+  margin-right: 10px;
+}
+@media (max-width: 576px) {
+  .main {
+    flex-direction: column;
+    width: 350px;
+    margin: 20px auto;
+  }
+  .main .desktop {
+    display: none;
+  }
+  .main .mobile {
+    display: block;
+    max-width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+  .Preview h1 {
+    font-size: 34px;
+  }
+  .Preview .btn {
+    width: 100%;
+  }
+}
